@@ -1,0 +1,33 @@
+.imgdetails{
+    width: 60%;
+    margin-top: 80px;
+}
+.textdetails{
+    margin-top: 200px;
+}
+.textdetails .title{
+    color: blue;
+}
+.category span{
+    color: red;
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.price h5{
+    background-color: blue;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.price a{
+    font-size: 18px;
+    background-color: rgb(246, 127, 0);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}

@@ -1,0 +1,121 @@
+$colordelet:red;
+$colorincres:green;
+// این قسمت استایل های wrapersoping
+.boxtotal{
+    border: 1px solid #d6cccc;
+    border-radius: 8px;
+    text-align: right;
+    box-shadow:0px 0px 2px 2px #efefef;
+    padding: 20px;
+    .btnTsvie{
+        background-color: $colorincres;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 8px;
+        margin: 5px 15px;
+        
+    }
+    .btnClear{
+        background-color: $colordelet;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 8px;
+        margin: 5px 5px;
+    }
+    /* totol box */
+    h5{
+        .totalshop{
+            color: blue;
+            line-height: 50px;
+             }
+        .totalshopnumber{
+            color: rgb(40, 39, 39);
+            font-size: 18px;
+            padding: 0px 8px;
+               }
+    }
+    @mixin clear_checkout($color){
+        h5{
+            color:$color;
+        }
+        a{
+            margin: 20px 0px;
+            text-decoration: none;
+            color: blue;
+            font-size: 16px;
+            display: block;
+        }
+    }
+    .clear{
+       @include clear_checkout(rgb(255, 61, 61));
+    }
+    .checkout{
+        @include clear_checkout(rgb(61, 255, 77))
+    }
+   
+}
+// این قسمت استایل های خود shopping
+.cartshoping{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #d6cccc;
+    border-radius: 8px;
+    box-shadow:0px 0px 2px 2px #efefef;
+    padding: 10px;
+    margin-bottom: 10px;
+    .cartshoping_img{
+        width: 20%;
+       img{
+        width: 50%;
+        height: 90px;
+       }
+    }
+    .cartshopingtext{
+        h5:first-child{
+            color: blue;
+        }
+        h5:nth-child(2){
+            color: $colorincres;
+        }
+    }
+    .cartshopingnumber{
+        background-color: orange;
+        color: #fff;
+        font-size: 20px;
+        padding: 0px 10px;
+        border-radius: 5px;}
+        .cartshopingbtn{
+            button:nth-child(1){
+                background-color: $colorincres;
+                color: #fff;
+                border-radius: 5px;
+                border: none;
+                padding: 8px;
+                margin:0px 8px;
+            }
+            .btndecres{
+                background-color: $colordelet;
+                color: #fff;
+                border-radius: 5px;
+                border: none;
+                padding: 8px 10px;
+                font-size: 17px;
+            }
+            .btndelet{
+                background-color:$colordelet;
+                color: #fff;
+                border-radius: 5px;
+                border: none;
+                padding: 10px 6px;
+                font-size: 6px;
+                span{
+                    font-size: 18px;
+                }
+            }
+        }
+}
+
+

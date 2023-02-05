@@ -1,0 +1,42 @@
+
+.navbar_wrapper{
+    background-color: #efefef;
+    padding: 20px;
+    box-shadow: 2px 2px 7px 7px #bbbaba;
+    position: sticky;
+    top:0;
+margin-bottom: 50px;
+z-index:10;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navbar a{
+text-decoration: none;
+font-size:18px;
+color: blue;
+
+font-weight: bold;
+}
+#numnershop{
+    position: absolute;
+    top: -18px;
+    right: -24px;
+    color: #fff;
+    background-color: blue;
+    padding: 7px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.numnershop_link{
+   position: relative;
+}
+.numnershop_link span:first-child{
+    font-size:35px;
+    font-weight: bold;
+}
