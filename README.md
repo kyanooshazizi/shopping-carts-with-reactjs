@@ -1,2 +1,2 @@
 وب سایت مشاهده پروژه
-https://phenomenal-bublanina-1ede8e.netlify.app/products
+https://phenomenal-bublanina-1ede8e.netlify.app/
